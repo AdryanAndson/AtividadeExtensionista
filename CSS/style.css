@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --fonte: Open Sans;
+    --corFonteNav: #D6EDFF;
+    --corFonteBlue: #222E50;
+    --backFooter: #76949F;
+    --Links: #ffe66d;
+    --backBlue: #ACD7EC;
+    --backNav: #04151F;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--backNav);
+    font-family: var(--fonte);
+    color: var(--corFonteNav);
+    padding: 24px;
+    position: fixed;
+    width: 100%;
+}
+
+.titulo{
+    font-size: 32px;
+    font-weight: 24px;
+}
+
+
+a:hover{
+    color: var(--Links);
+}
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 64px;
+    padding: 12px;
+}
+
+.mobileMenuIcon{
+    display: none;
+}
+
+.mobileMenu{
+    display: none;
+    background-color: var(--backNav);
+    font-family: var(--fonte);
+    color: var(--corFonteNav);
+}
+
+a{
+    text-decoration: none;
+    color: var(--corFonteNav);
+}
+
+.open{
+    display: block;
+}
+
+.containerBlue{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background-color: var(--backBlue);
+    height: 35rem;
+    font-family: var(--fonte);
+    color: var(--corFonteBlue);
+    font-size: 24px;
+}
+
+#img1{
+    margin-top: 100px;
+}
+
+.img{
+    width: 600px;
+    height: 21rem;
+    border-radius: 12px;
+}
+
+.outdoor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.outdoorTxt{
+    font-size: 20px;
+    padding: 32px;
+}
+
+.containerTxt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    height: 30rem;
+    background-color: var(--backNav);
+    color: var(--corFonteNav);
+    font-family: var(--fonte);
+    font-size: 24px;
+}
+
+.ideiaTxt{
+    font-size: 22px;
+    padding: 32px;
+}
+
+.txtDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+.containerQuemSomos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backBlue);
+    height: 30rem;
+    font-family: var(--fonte);
+    color: var(--corFonteBlue);
+    font-size: 24px;
+    padding: 32px;
+}
+
+.quemSomosTxt{
+    font-size: 20px;
+    padding: 32px;
+}
+
+.foot{
+    display: block;
+    text-align: center;
+    background-color: var(--backFooter);
+    font-family: var(--fonte);
+    color: var(--corFonte);
+    padding: 20px 0;
+}
+
+@media(max-width: 1200px){
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .navbar{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 32px;
+        position: unset;
+    }
+
+    .listaItem{
+        display: none;
+    }
+
+    .mobileMenuIcon{
+        display: block;
+    }
+
+    .mobileMenuIcon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobileMenu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .mobileMenu .listaItem{
+        display: block;
+        padding: 1rem;
+    }
+
+    .containerBlue, .containerQuemSomos, .containerTxt{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 16px;
+    }
+
+    .containerQuemSomos{
+        flex-direction: column-reverse;
+    }
+
+    #img1, .outdoor{
+        margin-top: 0;
+    }
+
+    .img{
+        border-radius: 12px;
+        width: 280px;
+        height: auto;
+    }
+
+    .outdoorTxt{
+        font-size: 16px;
+    }
+
+    .ideiaTxt{
+        font-size: 16px;
+        padding: 16px;
+        
+    }
+
+    .quemSomosTxt{
+        font-size: 16px;
+        padding: 2px;
+    }
+}
