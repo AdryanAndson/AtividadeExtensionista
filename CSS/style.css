@@ -27,6 +27,7 @@ html {
 .navbar {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   background-color: var(--backNav);
   font-family: var(--fonte);
